@@ -1,0 +1,442 @@
+{
+ "Daniel et Denise Saint-Jean, Lyon": {
+  "nombre": "Daniel et Denise",
+  "calle": "Rue Tramassac",
+  "cp": "69005",
+  "barrio": "Lyon 5e Arrondissement",
+  "lat": 45.760312,
+  "lon": 4.825455,
+  "tipo": "restaurant"
+ },
+ "Le Boeuf d'Argent, Lyon": {
+  "nombre": "Le Boeuf d'Argent",
+  "calle": "Rue du Bœuf",
+  "cp": "69005",
+  "barrio": "Lyon 5e Arrondissement",
+  "lat": 45.762154,
+  "lon": 4.82643,
+  "tipo": "restaurant"
+ },
+ "Les Adrets, rue du Boeuf, Lyon": {
+  "nombre": "Les Adrets",
+  "calle": "Rue du Bœuf",
+  "cp": "69005",
+  "barrio": "Lyon 5e Arrondissement",
+  "lat": 45.762508,
+  "lon": 4.826654,
+  "tipo": "restaurant"
+ },
+ "Notre Maison, Lyon": {
+  "nombre": "Notre Maison",
+  "calle": "Rue de Gadagne",
+  "cp": "69005",
+  "barrio": "Lyon 5e Arrondissement",
+  "lat": 45.76455,
+  "lon": 4.827661,
+  "tipo": "restaurant"
+ },
+ "Terre Adelice, Lyon": {
+  "nombre": "Terre adélice",
+  "calle": "1 Place de la Baleine",
+  "cp": "69005",
+  "barrio": "Lyon 5e Arrondissement",
+  "lat": 45.763373,
+  "lon": 4.828116,
+  "tipo": "ice_cream"
+ },
+ "Le Musee bouchon, Lyon": null,
+ "Cafe des Federations, Lyon": {
+  "nombre": "Café des Fédérations",
+  "calle": "8 Rue du Major Martin",
+  "cp": "69001",
+  "barrio": "Terreaux",
+  "lat": 45.766536,
+  "lon": 4.832427,
+  "tipo": "restaurant"
+ },
+ "Chez Hugon, Lyon": {
+  "nombre": "Chez Hugon",
+  "calle": "Rue Pizay",
+  "cp": "69001",
+  "barrio": "Terreaux",
+  "lat": 45.766843,
+  "lon": 4.835179,
+  "tipo": "restaurant"
+ },
+ "Le Garet, Lyon": {
+  "nombre": "Le Garet",
+  "calle": "Rue du Garet",
+  "cp": "69001",
+  "barrio": "Terreaux",
+  "lat": 45.766965,
+  "lon": 4.836903,
+  "tipo": "restaurant"
+ },
+ "Cafe Comptoir Abel, Lyon": {
+  "nombre": "Café Comptoir Abel",
+  "calle": "Voûte d'Ainay",
+  "cp": "69002",
+  "barrio": "Ainay",
+  "lat": 45.754135,
+  "lon": 4.825912,
+  "tipo": "restaurant"
+ },
+ "Le Poelon d'Or, Lyon": {
+  "nombre": "Le Poêlon d’Or",
+  "calle": "Rue des Remparts d'Ainay",
+  "cp": "69002",
+  "barrio": "Ainay",
+  "lat": 45.752776,
+  "lon": 4.8311,
+  "tipo": "restaurant"
+ },
+ "Cafe du Jura, Lyon": {
+  "nombre": "Café du Jura",
+  "calle": "Rue Tupin",
+  "cp": "69002",
+  "barrio": "Cordeliers",
+  "lat": 45.763019,
+  "lon": 4.834739,
+  "tipo": "restaurant"
+ },
+ "Brasserie Georges, Lyon": {
+  "nombre": "Brasserie Georges",
+  "calle": "Rue Antoine Delandine",
+  "cp": "69002",
+  "barrio": "Perrache",
+  "lat": 45.748322,
+  "lon": 4.828343,
+  "tipo": "restaurant"
+ },
+ "La Mere Brazier, Lyon": {
+  "nombre": "La Mère Brazier",
+  "calle": "Rue Royale",
+  "cp": "69001",
+  "barrio": "Terreaux",
+  "lat": 45.771386,
+  "lon": 4.837171,
+  "tipo": "restaurant"
+ },
+ "Prairial, Lyon": {
+  "nombre": "Prairial",
+  "calle": "Rue Casimir Périer",
+  "cp": "69002",
+  "barrio": "Lyon 2e Arrondissement",
+  "lat": 45.741672,
+  "lon": 4.822607,
+  "tipo": "restaurant"
+ },
+ "Chez Paul, rue Major Martin, Lyon": {
+  "nombre": "Chez Paul",
+  "calle": "Rue du Major Martin",
+  "cp": "69001",
+  "barrio": "Terreaux",
+  "lat": 45.766694,
+  "lon": 4.832654,
+  "tipo": "restaurant"
+ },
+ "Halles de la Martiniere, Lyon": {
+  "nombre": "Pépouze",
+  "calle": "Rue de la Martinière",
+  "cp": "69001",
+  "barrio": "Terreaux",
+  "lat": 45.768322,
+  "lon": 4.828529,
+  "tipo": "bar"
+ },
+ "Bistrot du Potager, rue de la Martiniere, Lyon": null,
+ "Maison Pralus, Lyon": null,
+ "Seve chocolatier, Lyon": {
+  "nombre": "Sève",
+  "calle": "Quai Saint-Antoine",
+  "cp": "69002",
+  "barrio": "Bellecour",
+  "lat": 45.762271,
+  "lon": 4.832072,
+  "tipo": "confectionery"
+ },
+ "Marche Saint-Antoine, Lyon": {
+  "nombre": "Marché Saint-Antoine",
+  "calle": "Quai Saint-Antoine",
+  "cp": "69002",
+  "barrio": "Bellecour",
+  "lat": 45.761525,
+  "lon": 4.831339,
+  "tipo": "marketplace"
+ },
+ "Le Bouchon des Filles, Lyon": {
+  "nombre": "Le Bouchon des Filles",
+  "calle": "Rue Sergent Blandan",
+  "cp": "69001",
+  "barrio": "Terreaux",
+  "lat": 45.768677,
+  "lon": 4.829317,
+  "tipo": "restaurant"
+ },
+ "Substrat restaurant, Lyon": {
+  "nombre": "Cabane Substrat",
+  "calle": "Rue Pailleron",
+  "cp": "69004",
+  "barrio": "La Croix-Rousse",
+  "lat": 45.779409,
+  "lon": 4.833049,
+  "tipo": "restaurant"
+ },
+ "Le Canut et les Gones, Lyon": {
+  "nombre": "Le canut et les gones",
+  "calle": "Impasse Gigodot",
+  "cp": "69004",
+  "barrio": "Lyon 4e Arrondissement",
+  "lat": 45.778556,
+  "lon": 4.834602,
+  "tipo": "restaurant"
+ },
+ "Marche de la Croix-Rousse, Lyon": {
+  "nombre": "Marché alimentaire Petite Place de la Croix-Rousse",
+  "calle": "Place de la Croix-Rousse",
+  "cp": "69004",
+  "barrio": "Lyon 4e Arrondissement",
+  "lat": 45.775864,
+  "lon": 4.832553,
+  "tipo": "marketplace"
+ },
+ "Sebastien Bouillet, place de la Croix-Rousse, Lyon": {
+  "nombre": "Bouillet Goûter",
+  "calle": "Place de la Croix-Rousse",
+  "cp": "69004",
+  "barrio": "Lyon 4e Arrondissement",
+  "lat": 45.775936,
+  "lon": 4.832955,
+  "tipo": "pastry"
+ },
+ "Mokxa, rue de l'Abbe Rozier, Lyon": null,
+ "L'Ourson qui boit, Lyon": null,
+ "Le Selcius, Lyon": null,
+ "La Sucriere, Lyon": {
+  "nombre": "La Sucrière",
+  "calle": "Quai Rambaud",
+  "cp": "69002",
+  "barrio": "Confluence",
+  "lat": 45.737023,
+  "lon": 4.815059,
+  "tipo": "office"
+ },
+ "Musee des Confluences, Lyon": {
+  "nombre": "Musée des Confluences",
+  "calle": "Autoroute du Soleil",
+  "cp": "69002",
+  "barrio": "Confluence",
+  "lat": 45.732678,
+  "lon": 4.818161,
+  "tipo": "museum"
+ },
+ "Halles de Lyon Paul Bocuse": {
+  "nombre": "Halles de Lyon Paul Bocuse",
+  "calle": "Parvis Renée Richard",
+  "cp": "69003",
+  "barrio": "Lyon 3e Arrondissement",
+  "lat": 45.762832,
+  "lon": 4.850551,
+  "tipo": "mall"
+ },
+ "Daniel et Denise Crequi, Lyon": {
+  "nombre": "Daniel et Denise Créqui",
+  "calle": "Rue Le Royer",
+  "cp": "69003",
+  "barrio": "Préfecture",
+  "lat": 45.762232,
+  "lon": 4.847199,
+  "tipo": "restaurant"
+ },
+ "A Ma Vigne, Lyon": {
+  "nombre": "À Ma Vigne",
+  "calle": "Rue Jean Larrivé",
+  "cp": "69003",
+  "barrio": "Préfecture",
+  "lat": 45.757338,
+  "lon": 4.841321,
+  "tipo": "restaurant"
+ },
+ "Bernachon, Lyon": {
+  "nombre": "Bernachon Passion",
+  "calle": "Cours Franklin Roosevelt",
+  "cp": "69006",
+  "barrio": "Les Brotteaux",
+  "lat": 45.768935,
+  "lon": 4.847796,
+  "tipo": "restaurant"
+ },
+ "Le Bouchon Sully, Lyon": {
+  "nombre": "Le Bouchon Sully",
+  "calle": "Rue Sully",
+  "cp": "69006",
+  "barrio": "Les Brotteaux",
+  "lat": 45.770591,
+  "lon": 4.843882,
+  "tipo": "restaurant"
+ },
+ "Brasserie des Brotteaux, Lyon": {
+  "nombre": "Brasserie des Brotteaux",
+  "calle": "Place Jules Ferry",
+  "cp": "69006",
+  "barrio": "Bellecombe",
+  "lat": 45.76793,
+  "lon": 4.85878,
+  "tipo": "restaurant"
+ },
+ "Les Apothicaires, rue de Seze, Lyon": null,
+ "L'Est Paul Bocuse, Lyon": null,
+ "Basilique Notre-Dame de Fourviere, Lyon": {
+  "nombre": "Basilique Notre-Dame de Fourvière",
+  "calle": "Place de Fourvière",
+  "cp": "69005",
+  "barrio": "Lyon 5e Arrondissement",
+  "lat": 45.762284,
+  "lon": 4.822588,
+  "tipo": "place_of_worship"
+ },
+ "Theatres romains de Fourviere, Lyon": {
+  "nombre": "Théâtres Romains",
+  "calle": "Place des Minimes",
+  "cp": "69005",
+  "barrio": "Lyon 5e Arrondissement",
+  "lat": 45.757837,
+  "lon": 4.821115,
+  "tipo": "bicycle_rental"
+ },
+ "Cathedrale Saint-Jean, Lyon": {
+  "nombre": "Cathédrale Saint-Jean",
+  "calle": "Rue Mandelot",
+  "cp": "69005",
+  "barrio": "Lyon 5e Arrondissement",
+  "lat": 45.760714,
+  "lon": 4.827424,
+  "tipo": "place_of_worship"
+ },
+ "Musee des Beaux-Arts de Lyon": {
+  "nombre": "Musée des Beaux-Arts de Lyon",
+  "calle": "Place des Terreaux",
+  "cp": "69001",
+  "barrio": "Terreaux",
+  "lat": 45.766705,
+  "lon": 4.833645,
+  "tipo": "museum"
+ },
+ "Mur des Canuts, Lyon": {
+  "nombre": "Mur des Canuts",
+  "calle": "Espace Guignol",
+  "cp": "69004",
+  "barrio": "La Croix-Rousse",
+  "lat": 45.777929,
+  "lon": 4.827969,
+  "tipo": "artwork"
+ },
+ "Maison des Canuts, Lyon": {
+  "nombre": "Maison des Canuts",
+  "calle": "Rue d'Ivry",
+  "cp": "69004",
+  "barrio": "Lyon 4e Arrondissement",
+  "lat": 45.777106,
+  "lon": 4.833685,
+  "tipo": "museum"
+ },
+ "Institut Lumiere, Lyon": {
+  "nombre": "Institut Lumière",
+  "calle": "Rue du Premier Film",
+  "cp": "69008",
+  "barrio": "Monplaisir",
+  "lat": 45.745088,
+  "lon": 4.870615,
+  "tipo": "museum"
+ },
+ "Parc de la Tete d'Or, Lyon": {
+  "nombre": "Parc de la Tête d'Or",
+  "calle": "",
+  "cp": "",
+  "barrio": "",
+  "lat": 45.778579,
+  "lon": 4.852096,
+  "tipo": "park"
+ },
+ "Place Bellecour, Lyon": {
+  "nombre": "Place Bellecour",
+  "calle": "Place Bellecour",
+  "cp": "69002",
+  "barrio": "Bellecour",
+  "lat": 45.757516,
+  "lon": 4.831995,
+  "tipo": "square"
+ },
+ "Place des Terreaux, Lyon": {
+  "nombre": "Place des Terreaux",
+  "calle": "Place des Terreaux",
+  "cp": "69001",
+  "barrio": "Terreaux",
+  "lat": 45.767492,
+  "lon": 4.833494,
+  "tipo": "pedestrian"
+ },
+ "Cour des Voraces, Lyon": {
+  "nombre": "Cour des Voraces",
+  "calle": "La Traboule des Voraces",
+  "cp": "69001",
+  "barrio": "Pentes de la Croix-Rousse",
+  "lat": 45.771962,
+  "lon": 4.834671,
+  "tipo": "attraction"
+ },
+ "Musee Cinema et Miniature, Lyon": {
+  "nombre": "Musée Cinéma & Miniature",
+  "calle": "Rue Saint-Jean",
+  "cp": "69005",
+  "barrio": "Lyon 5e Arrondissement",
+  "lat": 45.761875,
+  "lon": 4.827299,
+  "tipo": "museum"
+ },
+ "Musee Gadagne, Lyon": {
+  "nombre": "Musées Gadagne",
+  "calle": "Rue de Gadagne",
+  "cp": "69005",
+  "barrio": "Lyon 5e Arrondissement",
+  "lat": 45.76405,
+  "lon": 4.827286,
+  "tipo": "museum"
+ },
+ "Fresque des Lyonnais, Lyon": {
+  "nombre": "Fresque Histoire des transports Lyonnais",
+  "calle": "Rue Bonnefond",
+  "cp": "69003",
+  "barrio": "Grange Blanche",
+  "lat": 45.748499,
+  "lon": 4.878848,
+  "tipo": "artwork"
+ },
+ "Passage Thiaffait, Lyon": {
+  "nombre": "Passage Thiaffait",
+  "calle": "Passage Thiaffait",
+  "cp": "69001",
+  "barrio": "Terreaux",
+  "lat": 45.769775,
+  "lon": 4.833189,
+  "tipo": "service"
+ },
+ "Halle Tony Garnier, Lyon": {
+  "nombre": "Halle Tony Garnier",
+  "calle": "20 Place des Docteurs Charles et Christophe Mérieux",
+  "cp": "69007",
+  "barrio": "Gerland",
+  "lat": 45.729885,
+  "lon": 4.825013,
+  "tipo": "arts_centre"
+ },
+ "Jardin Rosa Mir, Lyon": {
+  "nombre": "Jardin Rosa Mir",
+  "calle": "Impasse Viard",
+  "cp": "69004",
+  "barrio": "La Croix-Rousse",
+  "lat": 45.780524,
+  "lon": 4.832074,
+  "tipo": "park"
+ }
+}

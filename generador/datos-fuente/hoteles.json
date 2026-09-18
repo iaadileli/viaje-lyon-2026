@@ -1,0 +1,151 @@
+{
+ "College Hotel, Lyon": {
+  "n": "Collège",
+  "calle": "Rue François Vernay",
+  "cp": "69005",
+  "barrio": "Lyon 5e Arrondissement",
+  "tipo": "hotel"
+ },
+ "Fourviere Hotel, Lyon": {
+  "n": "Fourvière Hôtel",
+  "calle": "Allée Lucius Munatius Plancus",
+  "cp": "69005",
+  "barrio": "Lyon 5e Arrondissement",
+  "tipo": "hotel"
+ },
+ "Hotel des Artistes, Lyon": {
+  "n": "Hôtel des Artistes",
+  "calle": "Square Jacques Lovie",
+  "cp": "69002",
+  "barrio": "Bellecour",
+  "tipo": "hotel"
+ },
+ "Hotel Silky by HappyCulture, Lyon": null,
+ "Hotel Carlton Lyon": {
+  "n": "Carlton Lyon - MGallery",
+  "calle": "4 Rue Jussieu",
+  "cp": "69002",
+  "barrio": "Cordeliers",
+  "tipo": "hotel"
+ },
+ "Boscolo Lyon": {
+  "n": "Boscolo Grand Hôtel",
+  "calle": "11 Quai Jules Courmont",
+  "cp": "69002",
+  "barrio": "Cordeliers",
+  "tipo": "hotel"
+ },
+ "Mob Hotel Lyon Confluence": {
+  "n": "Mob Hôtel",
+  "calle": "Quai Rambaud",
+  "cp": "69002",
+  "barrio": "Confluence",
+  "tipo": "hotel"
+ },
+ "Okko Hotels Lyon Pont Lafayette": {
+  "n": "Okko Hotels Lyon Pont Lafayette",
+  "calle": "Rue Vauban",
+  "cp": "69006",
+  "barrio": "Les Brotteaux",
+  "tipo": "hotel"
+ },
+ "Mama Shelter Lyon": {
+  "n": "Mama Shelter",
+  "calle": "Rue Domer",
+  "cp": "69007",
+  "barrio": "Jean-Macé",
+  "tipo": "hotel"
+ },
+ "Hotel Le Royal Lyon": {
+  "n": "Le Royal",
+  "calle": "Place Bellecour",
+  "cp": "69002",
+  "barrio": "Bellecour",
+  "tipo": "hotel"
+ },
+ "Villa Florentine Lyon": {
+  "n": "Villa Florentine",
+  "calle": "Montée Saint-Barthélémy",
+  "cp": "69005",
+  "barrio": "Lyon 5e Arrondissement",
+  "tipo": "hotel"
+ },
+ "InterContinental Lyon Hotel Dieu": {
+  "n": "InterContinental Lyon - Hotel Dieu",
+  "calle": "20 Quai Jules Courmont",
+  "cp": "69002",
+  "barrio": "Bellecour",
+  "tipo": "hotel"
+ },
+ "Hotel Le Phenix Lyon": {
+  "n": "Le Phénix",
+  "calle": "Quai de Bondy",
+  "cp": "69005",
+  "barrio": "Lyon 5e Arrondissement",
+  "tipo": "hotel"
+ },
+ "Cour des Loges Lyon": {
+  "n": "Cour des Loges",
+  "calle": "6 Rue du Bœuf",
+  "cp": "69005",
+  "barrio": "Lyon 5e Arrondissement",
+  "tipo": "restaurant"
+ },
+ "Villa Maia Lyon": {
+  "n": "Villa Maïa",
+  "calle": "8 Rue Professeur Pierre Marion",
+  "cp": "69005",
+  "barrio": "Lyon 5e Arrondissement",
+  "tipo": "hotel"
+ },
+ "Maison Nô Lyon": {
+  "n": "Maison Nô",
+  "calle": "Rue du Bât-d'Argent",
+  "cp": "69001",
+  "barrio": "Terreaux",
+  "tipo": "restaurant"
+ },
+ "Hotel de l'Abbaye Lyon": {
+  "n": "Hôtel de L'Abbaye",
+  "calle": "Place d'Ainay",
+  "cp": "69002",
+  "barrio": "Ainay",
+  "tipo": "hotel"
+ },
+ "Sofitel Lyon Bellecour": {
+  "n": "Sofitel Lyon Bellecour",
+  "calle": "Quai du Docteur Gailleton",
+  "cp": "69002",
+  "barrio": "Bellecour",
+  "tipo": "hotel"
+ },
+ "Hotel Bayard Bellecour Lyon": {
+  "n": "Hôtel Bayard",
+  "calle": "Place Bellecour",
+  "cp": "69002",
+  "barrio": "Bellecour",
+  "tipo": "hotel"
+ },
+ "Jiva Hill? no": null,
+ "Hotel Le Boulevardier Lyon": {
+  "n": "Le Boulevardier",
+  "calle": "Rue de la Fromagerie",
+  "cp": "69002",
+  "barrio": "Cordeliers",
+  "tipo": "hotel"
+ },
+ "Hotel des Celestins Lyon": {
+  "n": "Hôtel des Célestins",
+  "calle": "Rue des Archers",
+  "cp": "69002",
+  "barrio": "Bellecour",
+  "tipo": "hotel"
+ },
+ "La Cour des Loges": {
+  "n": "La Cour des Loges",
+  "calle": "",
+  "cp": "14700",
+  "barrio": "",
+  "tipo": "farm"
+ }
+}

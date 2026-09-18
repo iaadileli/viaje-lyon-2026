@@ -1,0 +1,92 @@
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="fechas">Para Edu y Sara · del viernes 9 al domingo 11 de octubre de 2026</div>
+    <h1>Lyon, dos días y medio</h1>
+    <p class="sub">La capital mundial de comer bien sin ceremonia. Aquí están los bouchons que
+    valen la pena —y cuáles abren en fin de semana, que es el truco—, los seis barrios que se
+    andan, dónde dormir y el festival de cine que os coincide justo esos días.</p>
+  </div>
+</header>
+
+<nav class="sans"><div class="nav-inner"><div class="wrap">
+  <a href="#ruta">Cómo usarla</a>
+  <a href="#lumiere">Festival Lumière</a>
+  <a href="#tiempo">El tiempo</a>
+  <a href="#mapa">Mapa</a>
+  <a href="#vieux">Vieux Lyon</a>
+  <a href="#fourviere">Fourvière</a>
+  <a href="#presquile">Presqu’île</a>
+  <a href="#croix">Croix-Rousse</a>
+  <a href="#confluence">Confluence</a>
+  <a href="#brotteaux">Halles y Brotteaux</a>
+  <a href="#comer">Comer</a>
+  <a href="#hoteles">Hoteles</a>
+  <a href="#paseos">Paseos</a>
+</div>
+  <div class="buscador sans">
+    <span class="lupa">🔍</span>
+    <input id="buscar" type="search" placeholder="Buscar…" aria-label="Buscar en la guía" autocomplete="off">
+    <div class="resultados" id="resultados"></div>
+  </div>
+  <button id="tema" class="tema-btn sans" aria-label="Cambiar a modo oscuro">☾</button>
+  <button id="menuBtn" class="menu-btn" onclick="toggleMenuInfo(event)" aria-label="Menú de información práctica" aria-expanded="false">
+    <span class="bars">☰</span><span>Info</span>
+  </button>
+  <div class="menu-panel" id="menuInfo">
+    <button id="temaMenu" class="tema-en-menu">☾ Modo oscuro</button>
+    <div class="cab">Sobre la marcha</div>
+    <a href="#comer" onclick="cerrarMenuInfo()">🍷 Comer (todo, y quién abre el finde)</a>
+    <a href="#lumiere" onclick="cerrarMenuInfo()">🎬 El Festival Lumière</a>
+    <a href="#paseos" onclick="cerrarMenuInfo()">🚶 Paseos, traboules y murales</a>
+    <a href="#tiempo" onclick="cerrarMenuInfo()">🌡️ El tiempo esos tres días</a>
+    <div class="cab cab2">Antes de salir</div>
+    <a href="#hoteles" onclick="cerrarMenuInfo()">🏨 Dónde dormir</a>
+    <a href="#entradas" onclick="cerrarMenuInfo()">🎟️ Lo poco que hay que reservar</a>
+    <a href="#transporte" onclick="cerrarMenuInfo()">🚇 Del aeropuerto al centro, y el metro</a>
+    <a href="#practico" onclick="cerrarMenuInfo()">🧭 Guía práctica</a>
+    <a href="#offline" onclick="cerrarMenuInfo()">📥 Guardarla en el móvil</a>
+  </div>
+</div></nav>
+
+<main>
+
+<section class="resumen" id="ruta">
+  <div class="kicker">Cómo se usa esto</div>
+  <h2>Dos días y medio, sin agenda</h2>
+  <p class="intro">Esta guía no os dice qué hacer el sábado a las once. Lyon es pequeño —el centro
+  se cruza andando en veinte minutos— y lo que de verdad condiciona el plan no es la distancia,
+  <strong>es a qué hora come la gente y qué días cierra cada sitio</strong>. Así que aquí hay
+  <strong>seis zonas</strong>, cada una con lo que merece la pena ver y <strong>dónde comer allí
+  mismo</strong>, y luego el resto de cosas aparte: el festival, los hoteles, el transporte.</p>
+
+  <div class="claves">
+    <div class="clave"><div class="n">2,10</div><div class="t">euros el billete de metro; 6,90 el día entero</div></div>
+    <div class="clave"><div class="n">10–18</div><div class="t">octubre: el Festival Lumière os pilla el sábado y el domingo</div></div>
+    <div class="clave"><div class="n">30</div><div class="t">minutos del aeropuerto al centro, en tranvía</div></div>
+    <div class="clave"><div class="n">1</div><div class="t">cosa que hay que reservar ya: el bouchon del viernes</div></div>
+  </div>
+
+  <h3 class="sub-h">Las seis zonas, en una línea cada una</h3>
+  <ul class="lista-ver">
+    <li><b><a href="#vieux">Vieux Lyon</a></b> — el casco renacentista más grande de Europa después de Venecia, con sus <i>traboules</i>, los pasadizos que atraviesan las casas. Precioso y lleno de trampas para turistas: aquí están las que no lo son.</li>
+    <li><b><a href="#fourviere">Fourvière</a></b> — la colina: se sube en funicular por dos euros, hay una basílica que parece un elefante boca arriba, un teatro romano entero y la mejor vista de la ciudad. Media mañana.</li>
+    <li><b><a href="#presquile">La Presqu’île</a></b> — entre los dos ríos: las plazas grandes, el museo de Bellas Artes, las tiendas y <b>la mayor concentración de bouchons buenos</b>. Es donde vais a cenar.</li>
+    <li><b><a href="#croix">La Croix-Rousse</a></b> — la colina de los tejedores de seda, hoy barrio de vecinos, mercado diario y bistrós jóvenes. Se sube en metro y se baja andando por las <i>pentes</i>.</li>
+    <li><b><a href="#confluence">Confluence</a></b> — donde el Saona se echa al Ródano: arquitectura contemporánea y un museo con forma de nube de acero. Media tarde, y solo si os va el asunto.</li>
+    <li><b><a href="#brotteaux">Las Halles, Brotteaux y la Tête d’Or</a></b> — la otra orilla: el mercado cubierto de Paul Bocuse, el parque grande y el barrio burgués. Para la mañana del domingo.</li>
+  </ul>
+
+  <div class="tip"><b>Si queréis un orden, este:</b> <b>viernes</b> llegáis, dejáis la maleta y
+  cenáis en un bouchon de Terreaux (reservado desde casa). <b>Sábado</b>: Fourvière por la mañana
+  —funicular, romanos, vistas—, bajáis andando al Vieux Lyon a comer, la tarde en la Presqu’île y
+  por la noche, si os apetece, una sesión del Festival Lumière. <b>Domingo</b>: mercado por la
+  mañana (el de la Croix-Rousse o el del quai Saint-Antoine, los dos son buenísimos), comida
+  tranquila y al aeropuerto. Todo lo demás sobra: guardadlo para la próxima.</div>
+
+  <p class="intro" style="margin-top:18px">Y aparte de las zonas, dos cosas que conviene mirar
+  antes de nada: <a href="#comer"><b>la sección de comer</b></a>, que explica qué es un bouchon y
+  —importante— <b>qué abre y qué cierra en fin de semana</b>, y
+  <a href="#lumiere"><b>el Festival Lumière</b></a>, que os coincide.</p>
+</section>
