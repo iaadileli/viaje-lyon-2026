@@ -22,6 +22,32 @@
   .sitios .sello.leyenda{background:#8a6a1f}
   .cerca-sello.k-bouchon{background:#8d2033}
   .cerca-sello.k-leyenda{background:#8a6a1f}
+  /* las mères (sep-2026): tercer sitio del sello, con el generador y la tabla SELLO del JS */
+  .sitios .sello.mere,.cerca-sello.k-mere{background:#b4552d}
+  /* la nota en estrellas: dorado sobre claro, y las vacías apagadas */
+  .nota{font-family:-apple-system,'Segoe UI',sans-serif;font-size:.86rem;letter-spacing:1px;
+    color:#a8740f;margin-left:7px;white-space:nowrap;font-weight:700;cursor:help}
+  .nota i{font-style:normal;color:#d9cdb4}
+  .cerca-n .nota{font-size:.78rem}
+  html[data-tema="oscuro"] .nota{color:#e8b64c}
+  html[data-tema="oscuro"] .nota i{color:#4d4238}
+  .label-bl{font-weight:600;color:#8d2033}
+  /* «qué hay que probar»: cada plato con su foto (sep-2026) */
+  .probar{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px;margin:10px 0 6px}
+  .probar-item{background:var(--card);border:1px solid var(--linea);border-radius:12px;overflow:hidden;box-shadow:var(--sombra)}
+  .probar-item img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;display:block;background:#eee}
+  .probar-item p{margin:0;padding:11px 14px 13px;font-size:.9rem;line-height:1.5}
+  .probar-item.sin-foto{grid-column:1/-1}
+  /* «los mejores»: dos columnas que en el móvil se apilan */
+  .podio{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin:10px 0 4px}
+  .podio-col{background:var(--card);border:1px solid var(--linea);border-radius:12px;padding:14px 16px 6px;box-shadow:var(--sombra)}
+  .podio-cab{font-family:-apple-system,'Segoe UI',sans-serif;font-weight:700;font-size:.9rem;
+    color:var(--teca);text-transform:uppercase;letter-spacing:.6px;margin-bottom:6px}
+  .podio ol{margin:0;padding-left:20px}
+  .podio li{margin:0 0 10px;line-height:1.4}
+  .podio li small{display:block;color:var(--tinta2);font-size:.82rem;margin-top:2px}
+  .podio a,.lista-ver a{color:inherit;text-decoration:none;border-bottom:1px dotted var(--mar)}
+  html[data-tema="oscuro"] .label-bl{color:#e8879a}
   html[data-tema="oscuro"] .sitios .sello.bouchon,
   html[data-tema="oscuro"] .cerca-sello.k-bouchon{background:#b02840}
 
@@ -48,9 +74,10 @@
   /* alguna foto viene pequeña de origen: a todo lo ancho se ve blanda */
   .banner.pequeno{max-width:660px;margin-left:auto;margin-right:auto}
 
-  /* el hero: los tejados de Lyon desde el tejado de Fourvière */
-  header.hero{background:linear-gradient(180deg,rgba(10,20,35,.28),rgba(10,20,35,.68)),
-    url('img/portada-hero.jpg') center/cover no-repeat}
+  /* el hero: Saint-Georges y Fourvière de noche, desde el Saona (sep-2026; antes era
+     un mar de tejados). La foto ya es oscura: el degradado solo refuerza abajo */
+  header.hero{background:linear-gradient(180deg,rgba(10,20,35,.22),rgba(10,20,35,.70)),
+    url('img/portada-hero.jpg') center 35%/cover no-repeat}
 
   /* los bloques de fondo claro también en modo oscuro (si no, texto claro sobre fondo claro) */
   html[data-tema="oscuro"] .comer,

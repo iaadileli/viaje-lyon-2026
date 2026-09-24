@@ -42,6 +42,9 @@ html = ''.join(partes)
 cred = 'generador/datos-fuente/creditos.json'
 if os.path.exists(cred):
     c = json.load(open(cred))
+    # y las de los platos de «qué hay que probar» (elegir-platos.py)
+    if os.path.exists('generador/datos-fuente/creditos-platos.json'):
+        c.update({'plato-' + k: v for k, v in json.load(open('generador/datos-fuente/creditos-platos.json')).items()})
     lis = '\n'.join(
         '    <li><a href="%s" target="_blank" rel="noopener">%s</a> · %s%s</li>'
         % (v['pagina'], v['titulo'], v['licencia'], (' · ' + v['autor']) if v.get('autor') else '')

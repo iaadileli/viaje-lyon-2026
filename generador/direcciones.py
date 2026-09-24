@@ -25,6 +25,10 @@ CANDIDATOS = [
  # Confluence
  "Le Selcius, Lyon", "La Sucriere, Lyon", "Musee des Confluences, Lyon",
  # Halles / Brotteaux / Tête d'Or
+ # sep-2026: las mères y el sustituto de Substrat (cerró el 6-jul-2024)
+ "Maison Lea, quai des Celestins, Lyon", "Bouchon Lea, place Antonin Gourju, Lyon",
+ "La Mere Jean, rue des Marronniers, Lyon", "Cafe du Peintre, boulevard des Brotteaux, Lyon",
+ "Daniel et Denise Croix-Rousse, rue de Cuire, Lyon",
  "Halles de Lyon Paul Bocuse", "Daniel et Denise Crequi, Lyon", "A Ma Vigne, Lyon",
  "Bernachon, Lyon", "Le Bouchon Sully, Lyon", "Brasserie des Brotteaux, Lyon",
  "Les Apothicaires, rue de Seze, Lyon", "L'Est Paul Bocuse, Lyon",

@@ -7,7 +7,7 @@ SALIDA = sys.argv[-1]
 os.makedirs('generador/datos-fuente/cand', exist_ok=True)
 try: fuente = ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.pil', 13)
 except Exception:
-    try: fuente = ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf', 13)
+    try: fuente = ImageFont.truetype('/System/Library/Fonts/Supplemental/Arial.ttf', 13)
     except Exception: fuente = ImageFont.load_default()
 
 CELDA, ALTO_TXT = 300, 46

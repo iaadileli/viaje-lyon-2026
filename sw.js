@@ -1,4 +1,4 @@
-const CACHE = 'lyon2026-v1';
+const CACHE = 'lyon2026-v2';
 const RECURSOS = [
   './',
   'index.html',
@@ -17,6 +17,17 @@ const RECURSOS = [
   'img/icono-192.png',
   'img/icono-512.png',
   'img/portada.jpg',
+  'img/platos/quenelle.jpg',
+  'img/platos/brioche.jpg',
+  'img/platos/salade.jpg',
+  'img/platos/tablier.jpg',
+  'img/platos/andouillette.jpg',
+  'img/platos/cervelle.jpg',
+  'img/platos/cardons.jpg',
+  'img/platos/marcellin.jpg',
+  'img/platos/tarte.jpg',
+  'img/platos/bugnes.jpg',
+  'img/platos/pot.jpg',
 ];
 
 

@@ -2,8 +2,14 @@
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 BASE = 'img/portada-hero.jpg'
-SERIF  = '/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf'
-SANS_B = '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
+import os
+def fuente(*rutas):
+    return next(r for r in rutas if os.path.exists(r))
+# en el Mac, Georgia y Arial; en Ubuntu (donde nació la guía), DejaVu
+SERIF  = fuente('/System/Library/Fonts/Supplemental/Georgia.ttf',
+                '/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf')
+SANS_B = fuente('/System/Library/Fonts/Supplemental/Arial Bold.ttf',
+                '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf')
 
 # ---------- portada 1200x630 ----------
 W, H = 1200, 630

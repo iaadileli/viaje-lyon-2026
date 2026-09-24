@@ -11,7 +11,8 @@ UA = 'guia-viaje-lyon/1.0 (uso personal)'
 
 # destino -> (fichero de candidatos, clave, índice elegido, ancho que se pide)
 ELEGIDAS = {
- 'portada-hero': ('fotos4.json', 'desdefourviere', 6, 2400),
+ # sep-2026: la vista desde Fourvière (fotos4 desdefourviere 6) era un mar de tejados
+ 'portada-hero': ('fotos5.json', 'couturier',       1, 2400),
  'vieux-lyon':   ('fotos3.json', 'vieux',          1, 1600),
  'fourviere':    ('fotos3.json', 'fourviere',      2, 1600),
  'terreaux':     ('fotos3.json', 'terreaux',       4, 1600),
@@ -71,8 +72,14 @@ def encoge(ruta, ancho_max):
     im.convert('RGB').save(ruta, 'JPEG', quality=82, optimize=True, progressive=True)
     return im.size
 
-creditos = {}
+# con argumentos solo se bajan esas (p. ej. `elegir.py portada-hero`) y se
+# conservan los créditos de las demás
+import sys
+SOLO = sys.argv[1:]
+RUTA_CRED = 'generador/datos-fuente/creditos.json'
+creditos = json.load(open(RUTA_CRED)) if SOLO and os.path.exists(RUTA_CRED) else {}
 for destino, (fich, clave, idx, ancho) in ELEGIDAS.items():
+    if SOLO and destino not in SOLO: continue
     c = json.load(open('generador/datos-fuente/' + fich))[clave][idx]
     url, ancho_original, lic, autor = thumb(c['t'], ancho)
     ruta = 'img/%s.jpg' % destino
@@ -85,5 +92,5 @@ for destino, (fich, clave, idx, ancho) in ELEGIDAS.items():
     print('  %-16s %6d KB  %dx%d  %s  [%s]' %
           (destino, os.path.getsize(ruta)//1024, w, h, forma, lic))
     time.sleep(4)
-json.dump(creditos, open('generador/datos-fuente/creditos.json','w'), ensure_ascii=False, indent=1)
+json.dump(creditos, open(RUTA_CRED,'w'), ensure_ascii=False, indent=1)
 print('\nCréditos en generador/datos-fuente/creditos.json')

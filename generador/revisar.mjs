@@ -10,14 +10,17 @@ import path from 'node:path';
 const RAIZ = path.join(import.meta.dirname, '..');
 const CANDIDATOS = [
   path.join(RAIZ, 'node_modules/playwright/index.mjs'),
-  '/home/adil/proyectos-adil/maquetador-libros/node_modules/playwright/index.mjs',
+  '/home/adil/proyectos-adil/maquetador-libros/node_modules/playwright/index.mjs',   // Ubuntu
 ];
 const donde = CANDIDATOS.find(existsSync);
 if (!donde) {
   console.error('Falta Playwright:  npm i -D playwright && npx playwright install chromium');
   process.exit(2);
 }
-const { chromium } = await import(donde);
+const { chromium, webkit } = await import(donde);
+// MOTOR=webkit node generador/revisar.mjs  → lo más parecido al Safari del iPad
+const MOTOR = process.env.MOTOR === 'webkit' ? webkit : null;
+if (MOTOR) console.log('Revisando con WebKit (Safari)');
 
 // --- servidor local, para que el service worker y los fetch se comporten como en producción
 let servidor = null, URL_BASE = process.argv[2];
@@ -53,7 +56,10 @@ const ojo   = (m) => { avisos.push(m); console.log('  · ' + m); };
 const bien  = (m) => console.log('  ✓ ' + m);
 const grupo = (t) => console.log('\n' + t);
 
-const nav = await chromium.launch();
+// en el Mac a veces no baja el «headless shell» (la CDN corta a los 30 s): se usa el
+// Chromium completo en modo sin ventana, que es el mismo motor
+const nav = MOTOR ? await MOTOR.launch()
+  : await chromium.launch().catch(() => chromium.launch({ channel: 'chromium' }));
 const ctx = await nav.newContext({ serviceWorkers: 'allow' });
 const p = await ctx.newPage();
 const errores = [], fallidos = [];

@@ -15,14 +15,16 @@ const URL = `http://127.0.0.1:${puerto}/index.html`;
 const salida = path.join(RAIZ, 'generador/datos-fuente/capturas');
 mkdirSync(salida, { recursive: true });
 
-const nav = await chromium.launch();
+// en el Mac a veces no baja el «headless shell» (la CDN corta a los 30 s): se usa el
+// Chromium completo en modo sin ventana, que es el mismo motor
+const nav = await chromium.launch().catch(() => chromium.launch({ channel: 'chromium' }));
 // --- escritorio
 const p = await nav.newPage({ viewport: { width: 1280, height: 900 } });
 await p.goto(URL, { waitUntil: 'networkidle' });
 await p.screenshot({ path: `${salida}/1-portada.png` });
 for (const [nombre, sel] of [['2-lumiere','#lumiere'], ['3-tiempo','#tiempo'], ['4-mapa','#mapa'],
                              ['5-vieux','#vieux'], ['6-comida','#vieux .comer'], ['7-comer','#comer'],
-                             ['8-horarios','.tabla-abre'], ['9-hoteles','#hoteles'],
+                             ['7b-mejores','.podio'], ['7c-probar','.probar'], ['8-horarios','.tabla-abre'], ['9-hoteles','#hoteles'],
                              ['12-paseos','#paseos'], ['13-transporte','#transporte']]) {
   const el = await p.$(sel);
   if (el) { await el.scrollIntoViewIfNeeded(); await p.waitForTimeout(350);
@@ -33,6 +35,9 @@ await p.evaluate(() => document.querySelector('#tema')?.click());
 await p.evaluate(() => document.querySelector('#vieux')?.scrollIntoView());
 await p.waitForTimeout(350);
 await p.screenshot({ path: `${salida}/10-oscuro.png` });
+await p.evaluate(() => document.querySelector('.podio')?.scrollIntoView());
+await p.waitForTimeout(350);
+await p.screenshot({ path: `${salida}/10b-oscuro-mejores.png` });
 // --- móvil
 const m = await nav.newPage({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2 });
 await m.goto(URL, { waitUntil: 'networkidle' });
@@ -40,5 +45,8 @@ await m.screenshot({ path: `${salida}/11-movil-portada.png` });
 await m.evaluate(() => document.querySelector('#vieux')?.scrollIntoView());
 await m.waitForTimeout(300);
 await m.screenshot({ path: `${salida}/12-movil-este.png` });
+await m.evaluate(() => document.querySelector('.probar')?.scrollIntoView());
+await m.waitForTimeout(300);
+await m.screenshot({ path: `${salida}/14-movil-probar.png` });
 await nav.close(); srv.kill();
 console.log('capturas en', salida);

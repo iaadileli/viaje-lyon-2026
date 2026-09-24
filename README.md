@@ -31,7 +31,7 @@ node generador/capturas.mjs        # capturas para mirarla de verdad
 python3 hacer-copia.py             # lyon-sin-conexion.html, un solo fichero
 ```
 
-- **`generador/datos.py`** es la fuente única de los 27 sitios de comer.
+- **`generador/datos.py`** es la fuente única de los 31 sitios de comer.
 - **`generador/direcciones.py`** es nuevo: pregunta a Nominatim la dirección real de cada sitio
   **antes** de escribirla en `datos.py`. Así salieron dos cosas que yo daba por otras: **Prairial**
   se ha mudado a la rue Casimir Périer y **Le Canut et les Gones**, a la impasse Gigodot.
@@ -62,3 +62,24 @@ predicción, el JS la repinta solo** al abrir la web. No hay que volver a ejecut
 Y una comprobación nueva en `revisar.mjs`: **contraste en modo oscuro** medido sobre la página en
 marcha, tamaño real de los sellos, filas completas en la tabla de horarios y accesos rápidos que
 lleven a alguna parte.
+
+## Revisión del 24 de septiembre de 2026 (en el Mac)
+
+- **Portada nueva**: Saint-Georges y Fourvière de noche desde el Saona (`portada-candidatas.py`
+  → `fotos5.json`; `elegir.py portada-hero` baja solo esa y conserva los demás créditos).
+  La anterior era un mar de tejados.
+- **Datos de comer comprobados otra vez**, y había errores gordos:
+  **Substrat cerró** el 6-jul-2024 (lo sustituye Daniel et Denise Croix-Rousse);
+  **Le Bœuf d’Argent ya no es bouchon** (gastronómico de la ganadora de Top Chef 2026, 60-205 €);
+  **La Mère Brazier cierra sábado y domingo**; Bouchon Sully ahora es **Le Sully**; horarios
+  corregidos en media lista. La tabla del fin de semana está rehecha.
+- **Las mères**: sello nuevo `mere` (la toca) y tres casas más: Maison Léa, Bouchon Léa y
+  La Mère Jean, más el Café du Peintre. Bloque propio en `#comer`.
+- **Nota de 1 a 3 estrellas** en cada restaurante (`r` en `datos.py`) y bloque «los mejores».
+  Sale de Michelin, Gault&Millau, Le Fooding y el label; ninguno tiene Bib Gourmand.
+- **El label** ya no se deduce del sello 🍷: va en el campo `label` de cada sitio.
+- **«Qué hay que probar» con foto de cada plato** (`platos-candidatas.py` → hojas de contacto →
+  `elegir-platos.py` → `img/platos/`). El mâchon va sin foto: es una costumbre, no un plato.
+- En el Mac: Pillow en `.venv/`, Playwright en `node_modules/`. Si no baja el «headless shell»,
+  `revisar.mjs` usa el Chromium completo. `MOTOR=webkit` existe, pero el WebKit de Playwright
+  se colgó al arrancar en este Mac (macOS 14): la revisión se hizo en Chromium.

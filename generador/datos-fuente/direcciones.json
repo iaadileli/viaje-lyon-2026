@@ -438,5 +438,42 @@
   "lat": 45.780524,
   "lon": 4.832074,
   "tipo": "park"
- }
+ },
+ "Maison Lea, quai des Celestins, Lyon": {
+  "nombre": "Maison Léa",
+  "calle": "11 Quai des Célestins",
+  "cp": "69002",
+  "barrio": "Bellecour",
+  "lat": 45.759634,
+  "lon": 4.830276,
+  "tipo": "restaurant"
+ },
+ "Bouchon Lea, place Antonin Gourju, Lyon": {
+  "nombre": "Bouchon Léa",
+  "calle": "11 Place Antonin Gourju",
+  "cp": "69002",
+  "barrio": "Bellecour",
+  "lat": 45.759548,
+  "lon": 4.830398,
+  "tipo": "restaurant"
+ },
+ "La Mere Jean, rue des Marronniers, Lyon": {
+  "nombre": "La Mère Jean",
+  "calle": "Rue des Marronniers",
+  "cp": "69002",
+  "barrio": "Bellecour",
+  "lat": 45.75728,
+  "lon": 4.834865,
+  "tipo": "restaurant"
+ },
+ "Cafe du Peintre, boulevard des Brotteaux, Lyon": {
+  "nombre": "Le Café du Peintre",
+  "calle": "Boulevard des Brotteaux",
+  "cp": "69006",
+  "barrio": "Les Brotteaux",
+  "lat": 45.765756,
+  "lon": 4.856843,
+  "tipo": "restaurant"
+ },
+ "Daniel et Denise Croix-Rousse, rue de Cuire, Lyon": null
 }

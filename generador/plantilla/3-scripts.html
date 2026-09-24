@@ -784,7 +784,7 @@ function avisaNueva(reg){
 (function(){
   if (typeof SITIOS === 'undefined') return;
 
-  var SELLO = {bouchon:'bouchon de los auténticos', amigo:'lo recomienda quien ha estado',
+  var SELLO = {bouchon:'bouchon tradicional', mere:'casa de una mère', amigo:'lo recomienda quien ha estado',
                leyenda:'lleva décadas abierto', local:'donde come la gente de aquí',
                barato:'muy barato', cena:'la comida buena', '':''};
 
@@ -846,6 +846,7 @@ function avisaNueva(reg){
         '<span class="cerca-d' + (s.ap ? ' aprox' : '') + '">' +
           (s.ap ? 'por aquí' : distancia(x.d)) + '</span>' +
         '<span class="cerca-n">' + s.n +
+          (s.r ? '<span class="nota n' + s.r + '">' + '★★★'.slice(0, s.r) + '</span>' : '') +
           (s.s ? '<span class="cerca-sello k-' + s.s + '">' + SELLO[s.s] + '</span>' : '') +
         '<small>' + s.z + (s.ap ? ' · no tengo su punto exacto' : andando(x.d)) + '</small></span></a>';
     }).join('');
