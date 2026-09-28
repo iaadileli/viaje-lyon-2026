@@ -1,4 +1,4 @@
-const CACHE = 'lyon2026-v2';
+const CACHE = 'lyon2026-v3';
 const RECURSOS = [
   './',
   'index.html',

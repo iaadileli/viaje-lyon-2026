@@ -65,7 +65,11 @@ lleven a alguna parte.
 
 ## Revisión del 24 de septiembre de 2026 (en el Mac)
 
-- **Portada nueva**: Saint-Georges y Fourvière de noche desde el Saona (`portada-candidatas.py`
+- **Portada nueva (28-sep)**: la fuente Bartholdi a pleno sol en la place des Terreaux; Adil quería
+  luz (`portada-candidatas2.py` → `fotos6.json`; alternativa con la misma luz: la fachada del
+  Ayuntamiento, `fotos6 terreaux 7`). El degradado del hero y el de `portada.py` aprietan más abajo
+  porque la foto es clara, y fecha y subtítulo llevan sombra. `sw.js` a lyon2026-v3.
+- **Portada anterior (24-sep)**: Saint-Georges y Fourvière de noche desde el Saona (`portada-candidatas.py`
   → `fotos5.json`; `elegir.py portada-hero` baja solo esa y conserva los demás créditos).
   La anterior era un mar de tejados.
 - **Datos de comer comprobados otra vez**, y había errores gordos:

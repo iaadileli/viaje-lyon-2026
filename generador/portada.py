@@ -22,16 +22,22 @@ im = im.crop(((im.width-W)//2, (im.height-H)//3, (im.width-W)//2+W, (im.height-H
 grad = Image.new('L', (1, H))
 for y in range(H):
     t = y / H
-    grad.putpixel((0, y), int(20 + 205 * max(0, (t-0.25)/0.75) ** 1.4))
+    # la foto de la fuente es clara (sep-2026): el degradado empieza antes y aprieta más
+    grad.putpixel((0, y), int(15 + 225 * max(0, (t-0.2)/0.8) ** 1.1))
 capa = Image.new('RGB', (W, H), (38, 10, 18))
 im = Image.composite(capa, im, grad.resize((W, H)))
 
 d = ImageDraw.Draw(im)
-d.text((64, 372), 'PARA EDU Y SARA · DEL 9 AL 11 DE OCTUBRE',
+def texto(xy, t, font, fill):
+    # sombra debajo, para que se lea también donde la foto es clara
+    for dx, dy in ((2, 2), (1, 1), (0, 2)):
+        d.text((xy[0]+dx, xy[1]+dy), t, font=font, fill=(10, 8, 12))
+    d.text(xy, t, font=font, fill=fill)
+texto((64, 372), 'PARA EDU Y SARA · DEL 9 AL 11 DE OCTUBRE',
        font=ImageFont.truetype(SANS_B, 22), fill=(240, 222, 226))
-d.text((60, 414), 'Lyon, dos días y medio',
+texto((60, 414), 'Lyon, dos días y medio',
        font=ImageFont.truetype(SERIF, 76), fill='white')
-d.text((64, 522), 'Bouchons, traboules, hoteles y el Festival Lumière',
+texto((64, 522), 'Bouchons, traboules, hoteles y el Festival Lumière',
        font=ImageFont.truetype(SERIF, 33), fill=(238, 228, 231))
 im.save('img/portada.jpg', quality=90, optimize=True)
 print('img/portada.jpg', im.size)

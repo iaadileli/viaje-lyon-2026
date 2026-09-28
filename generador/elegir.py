@@ -11,8 +11,11 @@ UA = 'guia-viaje-lyon/1.0 (uso personal)'
 
 # destino -> (fichero de candidatos, clave, índice elegido, ancho que se pide)
 ELEGIDAS = {
- # sep-2026: la vista desde Fourvière (fotos4 desdefourviere 6) era un mar de tejados
- 'portada-hero': ('fotos5.json', 'couturier',       1, 2400),
+ # sep-2026: la vista desde Fourvière (fotos4 desdefourviere 6) era un mar de tejados;
+ # la de Saint-Georges de noche (fotos5 couturier 1) era bonita pero oscura: Adil quería luz.
+ # Ahora, la fuente Bartholdi a pleno sol (portada-candidatas2.py → fotos6.json).
+ # Alternativa con la misma luz: la fachada del Ayuntamiento (fotos6 terreaux 7).
+ 'portada-hero': ('fotos6.json', 'bartholdi',      30, 2400),
  'vieux-lyon':   ('fotos3.json', 'vieux',          1, 1600),
  'fourviere':    ('fotos3.json', 'fourviere',      2, 1600),
  'terreaux':     ('fotos3.json', 'terreaux',       4, 1600),

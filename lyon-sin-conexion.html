@@ -873,10 +873,13 @@
   /* alguna foto viene pequeña de origen: a todo lo ancho se ve blanda */
   .banner.pequeno{max-width:660px;margin-left:auto;margin-right:auto}
 
-  /* el hero: Saint-Georges y Fourvière de noche, desde el Saona (sep-2026; antes era
-     un mar de tejados). La foto ya es oscura: el degradado solo refuerza abajo */
-  header.hero{background:linear-gradient(180deg,rgba(10,20,35,.22),rgba(10,20,35,.70)),
-    url('img/portada-hero.jpg') center 35%/cover no-repeat}
+  /* el hero: la fuente Bartholdi a pleno sol en la place des Terreaux (28-sep-2026; Adil
+     quería luz: antes Saint-Georges de noche, y antes un mar de tejados). La foto es clara,
+     así que arriba casi no se toca y abajo el degradado sube para que se lea el texto */
+  header.hero{background:linear-gradient(180deg,rgba(10,20,35,.08) 0%,rgba(10,20,35,.42) 40%,rgba(10,20,35,.82) 100%),
+    url('img/portada-hero.jpg') center 40%/cover no-repeat}
+  /* con fondo claro, la fecha y el subtítulo necesitan sombra igual que el título */
+  .hero .fechas,.hero .sub{text-shadow:0 1px 10px rgba(0,0,0,.75),0 0 2px rgba(0,0,0,.6)}
 
   /* los bloques de fondo claro también en modo oscuro (si no, texto claro sobre fondo claro) */
   html[data-tema="oscuro"] .comer,
@@ -2155,7 +2158,7 @@
   <details class="creditos">
     <summary>Créditos de las fotos</summary>
     <ul id="creditos-fotos">
-    <li><a href="https://commons.wikimedia.org/wiki/File%3AEvening_Saint-Georges.jpg" target="_blank" rel="noopener">Evening Saint-Georges.jpg</a> · CC BY-SA 3.0 · Armen Hambardzumian</li>
+    <li><a href="https://commons.wikimedia.org/wiki/File%3AFontaine_Bartholdi_01.jpg" target="_blank" rel="noopener">Fontaine Bartholdi 01.jpg</a> · CC BY-SA 4.0 · Thomas Hummel</li>
     <li><a href="https://commons.wikimedia.org/wiki/File%3AAu_dessus_du_quartier_Saint-Jean.jpg" target="_blank" rel="noopener">Au dessus du quartier Saint-Jean.jpg</a> · Copyrighted free use · Patrick Verdier, Free On Line Photos</li>
     <li><a href="https://commons.wikimedia.org/wiki/File%3A02._Basilique_Notre_dame_de_Fourvi%C3%A8re_avril_2011.JPG" target="_blank" rel="noopener">02. Basilique Notre dame de Fourvière avril 2011.JPG</a> · CC BY-SA 3.0 · User:Otourly</li>
     <li><a href="https://commons.wikimedia.org/wiki/File%3AAvant_de_l%E2%80%99h%C3%B4tel_de_ville_%28Lyon%2C_2026%29.jpg" target="_blank" rel="noopener">Avant de l’hôtel de ville (Lyon, 2026).jpg</a> · CC BY-SA 4.0 · Corentin Eustacchi</li>
