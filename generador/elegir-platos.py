@@ -11,7 +11,8 @@ os.chdir(RAIZ)
 fuente = open('generador/elegir.py').read().split('creditos = {}')[0].split('# con argumentos')[0]
 exec(fuente)
 
-# plato -> (clave en fotos-platos.json, índice elegido)
+# plato -> (clave en fotos-platos.json, índice elegido); si la clave empieza por «2:»,
+# viene de fotos-platos2.json (segunda tanda, oct-2026, platos2-candidatas.py)
 PLATOS = {
  'quenelle':     ('quenelle', 5),      # gratinada en su cazuela, la de bouchon
  'brioche':      ('brioche', 1),
@@ -24,8 +25,33 @@ PLATOS = {
  'tarte':        ('tarte', 7),
  'bugnes':       ('bugnes', 0),
  'pot':          ('pot', 1),
+ # --- segunda tanda (oct-2026): Adil pidió una lista larga
+ 'croute':       ('2:croute', 6),      # el de Daniel et Denise, que está en la guía
+ 'tete':         ('2:tete', 1),        # Brasserie Georges, con su ravigote
+ 'meurette':     ('2:meurette', 3),    # en una brasserie de la Croix-Rousse
+ 'chaud':        ('2:chaud', 9),       # pistachos y patatas salteadas
+ 'sabodet':      ('2:chaud', 3),       # el sabodet de Daniel et Denise
+ 'rosette':      ('2:rosette', 4),
+ 'jesus':        ('2:jesus', 1),
+ 'grattons':     ('2:grattons', 0),    # sobre rosette y mantel de cuadros
+ 'gateaufoie':   ('2:lyoncuisine', 12),
+ 'moelle':       ('2:lyoncuisine', 18),
+ 'bresse':       ('2:bresse', 0),      # entera, con morillas
+ 'demideuil':    ('2:demideuil', 0),   # la propia Mère Fillioux (Françoise Fayolle), dominio público
+ 'vinaigre':     ('2:vinaigre', 3),
+ 'boudin':       ('2:boudin', 3),      # Chez Paul, que está en la guía
+ 'pommes':       ('2:pommes2', 2),
+ 'lentilles':    ('2:lentilles', 6),   # Bouillon de Lyon
+ 'foie':         ('2:foie', 0),
+ 'flottante':    ('pralines', 0),      # Brasserie Georges, pralines rosas
+ 'genix':        ('2:genix', 1),
+ 'coussin':      ('2:coussin', 3),
+ 'rigotte':      ('2:rigotte', 2),     # abierta
+ 'faisselle':    ('2:faisselle', 0),
+ 'machon':       ('2:machon', 0),      # la placa de los Francs-Mâchons
 }
 cand = json.load(open('generador/datos-fuente/fotos-platos.json'))
+cand.update({'2:' + k: v for k, v in json.load(open('generador/datos-fuente/fotos-platos2.json')).items()})
 os.makedirs('img/platos', exist_ok=True)
 RUTA = 'generador/datos-fuente/creditos-platos.json'
 cred = json.load(open(RUTA)) if os.path.exists(RUTA) else {}

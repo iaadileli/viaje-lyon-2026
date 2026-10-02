@@ -15,6 +15,10 @@ Publicada en → https://iaadileli.github.io/viaje-lyon-2026/
   Sección propia con precios y qué hacer.
 - **Tabla de hoteles de 100 a 200 €** con Booking precargado (9 → 11 oct, 2 adultos).
 - **Sello nuevo `bouchon`** en las fichas de comer, para los del cartel de Gnafron.
+- **«Qué hay que probar»: 34 platos con foto y explicación** (en `#probar`, dentro de `#comer`), por
+  grupos: entradas y embutido, platos de bouchon, aves y mères, quesos, dulces, bebida. Las fotos salen
+  de Commons con `generador/platos-candidatas.py` (primera tanda) y `platos2-candidatas.py` (segunda,
+  oct-2026), se miran en hoja de contacto y se bajan con `elegir-platos.py`, que deja los créditos.
 
 ## Cómo se monta
 

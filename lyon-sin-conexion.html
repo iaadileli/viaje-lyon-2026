@@ -837,6 +837,8 @@
   .probar-item img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;display:block;background:#eee}
   .probar-item p{margin:0;padding:11px 14px 13px;font-size:.9rem;line-height:1.5}
   .probar-item.sin-foto{grid-column:1/-1}
+  .probar-grupo{font-family:-apple-system,'Segoe UI',sans-serif;font-size:1rem;margin:22px 0 2px;padding-bottom:5px;border-bottom:2px solid var(--oro)}
+  .probar-grupo span{display:block;font-weight:400;font-size:.86rem;color:var(--tinta2);margin-top:2px}
   /* «los mejores»: dos columnas que en el móvil se apilan */
   .podio{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin:10px 0 4px}
   .podio-col{background:var(--card);border:1px solid var(--linea);border-radius:12px;padding:14px 16px 6px;box-shadow:var(--sombra)}
@@ -1029,6 +1031,7 @@
   <a href="#confluence">Confluence</a>
   <a href="#brotteaux">Halles y Brotteaux</a>
   <a href="#comer">Comer</a>
+  <a href="#probar">Qué probar</a>
   <a href="#hoteles">Hoteles</a>
   <a href="#paseos">Paseos</a>
 </div>
@@ -1045,6 +1048,7 @@
     <button id="temaMenu" class="tema-en-menu">☾ Modo oscuro</button>
     <div class="cab">Sobre la marcha</div>
     <a href="#comer" onclick="cerrarMenuInfo()">🍷 Comer (todo, y quién abre el finde)</a>
+    <a href="#probar" onclick="cerrarMenuInfo()">🍽️ Qué hay que probar: 34 platos con foto</a>
     <a href="#lumiere" onclick="cerrarMenuInfo()">🎬 El Festival Lumière</a>
     <a href="#paseos" onclick="cerrarMenuInfo()">🚶 Paseos, traboules y murales</a>
     <a href="#tiempo" onclick="cerrarMenuInfo()">🌡️ El tiempo esos tres días</a>
@@ -1830,20 +1834,59 @@
     del nieto de una familia de cocineras.</li>
   </ul>
 
-  <h3 class="ir-titulo" style="margin-top:30px">Qué hay que probar, y qué es cada cosa</h3>
+  <h3 class="ir-titulo" id="probar" style="margin-top:30px">Qué hay que probar, y qué es cada cosa</h3>
+  <p class="intro">Aquí van <b>34 platos, con foto</b>, para que en la pizarra del bouchon no haya que adivinar nada. Están por el orden en que se comen; no hace falta probarlos todos, pero sí saber qué son.</p>
+  <h4 class="probar-grupo">Para empezar: embutido y entradas <span>En un bouchon se empieza casi siempre así, y en las Halles se compra para llevar.</span></h4>
+  <div class="probar">
+    <div class="probar-item"><img src="img/platos/brioche.jpg" alt="Saucisson brioché cortado, con el salchichón dentro de la masa" loading="lazy" width="800" height="600"><p><b>Saucisson brioché</b> — un salchichón cocido envuelto en masa de brioche, cortado en rodajas. Entrada clásica, y si lleva pistachos, mejor.</p></div>
+    <div class="probar-item"><img src="img/platos/rosette.jpg" alt="Rosettes de Lyon colgadas y una cortada en rodajas" loading="lazy" width="800" height="600"><p><b>Rosette de Lyon</b> — el salchichón curado de la ciudad, gordo y de grano grueso, embutido en la tripa que le da nombre. Se corta fino y se come con pepinillos y un pot. En las Halles lo venden al vacío para el avión.</p></div>
+    <div class="probar-item"><img src="img/platos/jesus.jpg" alt="Jésus de Lyon cortado, con la malla puesta" loading="lazy" width="800" height="600"><p><b>Jésus de Lyon</b> — el hermano mayor de la rosette: más gordo, más corto, en malla, y con una curación más larga. Era el embutido de Navidad de los canuts.</p></div>
+    <div class="probar-item"><img src="img/platos/grattons.jpg" alt="Grattons lyonnais sobre rodajas de rosette, en mantel de cuadros" loading="lazy" width="800" height="600"><p><b>Grattons</b> — chicharrones: trozos de carne y grasa de cerdo fritos en su propia grasa hasta quedar crujientes. Se pican con el aperitivo, y en los mercados los venden a peso.</p></div>
+    <div class="probar-item"><img src="img/platos/salade.jpg" alt="Salade lyonnaise con torreznos, picatostes y huevo escalfado" loading="lazy" width="800" height="600"><p><b>Salade lyonnaise</b> — escarola, torreznos, picatostes y un huevo escalfado encima, con vinagreta. Parece una ensalada y es un plato de cuchillo.</p></div>
+    <div class="probar-item"><img src="img/platos/lentilles.jpg" alt="Ensalada de lentejas con vinagreta y chalota en un bouchon" loading="lazy" width="800" height="600"><p><b>Salade de lentilles</b> — lentejas verdes frías con vinagreta de mostaza y chalota. Es la entrada humilde de todos los bouchons, y en los buenos está muy por encima de lo que suena.</p></div>
+    <div class="probar-item"><img src="img/platos/meurette.jpg" alt="Huevos en meurette con tocino y pan tostado" loading="lazy" width="800" height="600"><p><b>Œufs en meurette</b> — huevos escalfados en salsa de vino tinto con tocino, cebollitas y champiñones, sobre pan. Viene de Borgoña, pero aquí se ha quedado.</p></div>
+    <div class="probar-item"><img src="img/platos/croute.jpg" alt="Pâté en croûte con foie gras, en plato, en Daniel et Denise" loading="lazy" width="800" height="600"><p><b>Pâté en croûte</b> — un pastel de carne (cerdo, ternera, a veces foie gras o pato) horneado dentro de una masa, con una capa de gelatina. Lyon se toma esto en serio: hay <b>un campeonato del mundo</b>, y el de Daniel et Denise lo ganó.</p></div>
+    <div class="probar-item"><img src="img/platos/gateaufoie.jpg" alt="Gâteau de foies de volaille con salsa de tomate" loading="lazy" width="800" height="600"><p><b>Gâteau de foies de volaille</b> — un flan suave de hígados de pollo, huevo y nata, cocido al baño maría y servido con salsa de tomate o Nantua. Plato de las mères, de los que ya casi no se hacen en casa.</p></div>
+    <div class="probar-item"><img src="img/platos/moelle.jpg" alt="Dos huesos de tuétano asados con sal gorda" loading="lazy" width="800" height="600"><p><b>Os à moelle</b> — hueso de tuétano asado, con sal gorda y pan tostado. Se saca con la cucharilla y se unta. Con cardos es el gratén de más abajo; solo, una entrada.</p></div>
+  </div>
+  <h4 class="probar-grupo">Los platos de bouchon <span>Casquería, cerdo y salsas con mantequilla. Lo que es Lyon de verdad.</span></h4>
   <div class="probar">
     <div class="probar-item"><img src="img/platos/quenelle.jpg" alt="Quenelle de lucio gratinada en su cazuela, con salsa Nantua" loading="lazy" width="800" height="600"><p><b>Quenelle de brochet</b> — la reina. Una masa suavísima de lucio, huevo y mantequilla que se hincha en el horno como un suflé, bañada en <i>sauce Nantua</i>, de cangrejo de río. La de lata que se vende en España no tiene nada que ver. <b>Si solo probáis un plato, este.</b></p></div>
-    <div class="probar-item"><img src="img/platos/brioche.jpg" alt="Saucisson brioché cortado, con el salchichón dentro de la masa" loading="lazy" width="800" height="600"><p><b>Saucisson brioché</b> — un salchichón cocido envuelto en masa de brioche, cortado en rodajas. Entrada clásica, y si lleva pistachos, mejor.</p></div>
-    <div class="probar-item"><img src="img/platos/salade.jpg" alt="Salade lyonnaise con torreznos, picatostes y huevo escalfado" loading="lazy" width="800" height="600"><p><b>Salade lyonnaise</b> — escarola, torreznos, picatostes y un huevo escalfado encima, con vinagreta. Parece una ensalada y es un plato de cuchillo.</p></div>
     <div class="probar-item"><img src="img/platos/tablier.jpg" alt="Tablier de sapeur rebozado, con patatas y salsa gribiche" loading="lazy" width="800" height="600"><p><b>Tablier de sapeur</b> — callos de ternera marinados en vino blanco, rebozados y fritos, con salsa gribiche. El nombre —«delantal de zapador»— se lo puso un mariscal del XIX. Está mucho mejor de lo que suena.</p></div>
     <div class="probar-item"><img src="img/platos/andouillette.jpg" alt="Andouillette a la plancha abierta, con ensalada y patatas" loading="lazy" width="800" height="600"><p><b>Andouillette</b> — embutido de tripa de cerdo, fuerte y con carácter. Buscad las que llevan <b>AAAAA</b>, el sello de la asociación que las juzga. Aviso honesto: <b>o encanta o espanta</b>, y no hay término medio.</p></div>
-    <div class="probar-item"><img src="img/platos/cervelle.jpg" alt="Cuenco de cervelle de canut, queso blanco batido con hierbas" loading="lazy" width="800" height="600"><p><b>Cervelle de canut</b> — no lleva sesos de nadie: es queso blanco batido con ajo, chalota, hierbas, aceite y vinagre. Se unta en pan y se come de postre salado o de entrada. Lo llamaban así por burla de lo que comían los tejedores.</p></div>
+    <div class="probar-item"><img src="img/platos/chaud.jpg" alt="Saucisson chaud con pistachos y patatas salteadas" loading="lazy" width="800" height="600"><p><b>Saucisson chaud pistaché</b> — el salchichón cocido de Lyon, con pistachos o trufa, servido caliente en rodajas gruesas con patatas al aceite o salteadas. Aquí lo llaman también <i>cervelas</i>. Es el plato de cuchara que más se repite en las pizarras.</p></div>
+    <div class="probar-item"><img src="img/platos/sabodet.jpg" alt="Rodajas de sabodet con patatas en Daniel et Denise" loading="lazy" width="800" height="600"><p><b>Sabodet</b> — una salchicha gorda de cabeza y corteza de cerdo, cocida y cortada en rodajas gruesas. Debe el nombre a su forma de zueco (<i>sabot</i>). Rústico y muy de aquí.</p></div>
+    <div class="probar-item"><img src="img/platos/boudin.jpg" alt="Boudin noir con manzana y puré en Chez Paul" loading="lazy" width="800" height="600"><p><b>Boudin noir aux pommes</b> — morcilla con manzana salteada, dulce contra salado. La foto es la de Chez Paul, que está en la guía. Si os gusta la morcilla de Burgos, esta es más suave y cremosa.</p></div>
+    <div class="probar-item"><img src="img/platos/tete.jpg" alt="Tête de veau con salsa ravigote y verduras en la Brasserie Georges" loading="lazy" width="800" height="600"><p><b>Tête de veau sauce ravigote</b> — cabeza de ternera cocida en caldo, servida con patatas y zanahoria y una salsa de vinagre, hierbas, alcaparras y chalota (o gribiche, con huevo). Plato de los que se piden una vez para poder contarlo, y luego se repiten.</p></div>
+    <div class="probar-item"><img src="img/platos/foie.jpg" alt="Hígado de ternera a la plancha con salsa y puré" loading="lazy" width="800" height="600"><p><b>Foie de veau à la lyonnaise</b> — hígado de ternera a la plancha con cebolla pochada, un chorro de vinagre y perejil. Lo de «à la lyonnaise» en cualquier carta del mundo quiere decir eso: con cebolla.</p></div>
     <div class="probar-item"><img src="img/platos/cardons.jpg" alt="Gratín de cardos con huesos de tuétano en la fuente" loading="lazy" width="800" height="600"><p><b>Gratin de cardons à la moelle</b> — cardos gratinados con tuétano. Plato de invierno que casi no existe fuera de Lyon; si está en la pizarra en octubre, pedidlo.</p></div>
+    <div class="probar-item"><img src="img/platos/pommes.jpg" alt="Patatas lyonnaise salteadas con cebolla y perejil en sartén" loading="lazy" width="800" height="600"><p><b>Pommes lyonnaises</b> — patatas en rodajas salteadas con cebolla y perejil. La guarnición de la casa, y lo que acompaña a casi todo lo de arriba.</p></div>
+  </div>
+  <h4 class="probar-grupo">Las aves y las mères <span>La cocina fina de Lyon es de pollo, y sale de las cocineras.</span></h4>
+  <div class="probar">
+    <div class="probar-item"><img src="img/platos/bresse.jpg" alt="Poularde de Bresse entera con nata y morillas" loading="lazy" width="800" height="600"><p><b>Poularde de Bresse</b> — el pollo de Bresse, a una hora de Lyon, fue <b>la primera ave con denominación de origen</b> del mundo (1957): patas azules, cresta roja, plumas blancas. Asada, o con nata y morillas como en la foto. Cara, y lo vale.</p></div>
+    <div class="probar-item"><img src="img/platos/demideuil.jpg" alt="La Mère Fillioux, Françoise Fayolle, preparando sus poulardes demi-deuil en su restaurante" loading="lazy" width="800" height="600"><p><b>Poularde demi-deuil</b> — «de medio luto»: una poularde de Bresse con láminas de trufa negra bajo la piel, escalfada en caldo. La inventó la <b>Mère Fillioux</b>, que es la señora de la foto; hoy la sirve La Mère Brazier, que fue su alumna.</p></div>
+    <div class="probar-item"><img src="img/platos/vinaigre.jpg" alt="Pollo al vinagre con su salsa, en plato" loading="lazy" width="800" height="600"><p><b>Poulet au vinaigre</b> — pollo guisado con vinagre, chalota, tomate y nata, que deja una salsa agridulce. Plato de bistró de la región, y uno de los que Bocuse llevó a la fama.</p></div>
+  </div>
+  <h4 class="probar-grupo">Los quesos <span>Se comen muy hechos, y al final, antes del dulce.</span></h4>
+  <div class="probar">
     <div class="probar-item"><img src="img/platos/marcellin.jpg" alt="Saint-Marcellin cortado, cremoso por dentro" loading="lazy" width="800" height="600"><p><b>Saint-Marcellin</b> — un queso pequeño de vaca que aquí se come <b>muy hecho</b>, casi líquido, con una cuchara. El de Mère Richard, en las Halles, es el famoso.</p></div>
+    <div class="probar-item"><img src="img/platos/rigotte.jpg" alt="Rigottes de Condrieu, una abierta, cremosa por dentro" loading="lazy" width="800" height="600"><p><b>Rigotte de Condrieu</b> — un quesito de cabra de los montes del Pilat, al sur de Lyon, con denominación de origen. Tierno y con corteza fina; en las Halles y en el mercado de la Croix-Rousse.</p></div>
+    <div class="probar-item"><img src="img/platos/cervelle.jpg" alt="Cuenco de cervelle de canut, queso blanco batido con hierbas" loading="lazy" width="800" height="600"><p><b>Cervelle de canut</b> — no lleva sesos de nadie: es queso blanco batido con ajo, chalota, hierbas, aceite y vinagre. Se unta en pan y se come de postre salado o de entrada. Lo llamaban así por burla de lo que comían los tejedores.</p></div>
+    <div class="probar-item"><img src="img/platos/faisselle.jpg" alt="Faisselle de queso fresco con nata en un cuenco" loading="lazy" width="800" height="600"><p><b>Fromage blanc à la crème</b> — queso fresco escurrido (<i>faisselle</i>) con un chorro de nata y azúcar, o con sal y hierbas. Es el postre que cierra el menú de bouchon, y la versión dulce de la cervelle de canut.</p></div>
+  </div>
+  <h4 class="probar-grupo">Los dulces <span>Lo rosa es de aquí: las pralines tiñen media pastelería de la ciudad.</span></h4>
+  <div class="probar">
     <div class="probar-item"><img src="img/platos/tarte.jpg" alt="Tarta de pralines rosas en el mostrador de una pastelería" loading="lazy" width="800" height="600"><p><b>Praline rose y tarte aux pralines</b> — almendras caramelizadas teñidas de un rosa chillón, machacadas y horneadas sobre masa quebrada. El color es tan falso como delicioso, y es <b>el dulce de la ciudad</b>.</p></div>
+    <div class="probar-item"><img src="img/platos/flottante.jpg" alt="Île flottante con pralines rosas en la Brasserie Georges" loading="lazy" width="800" height="600"><p><b>Île flottante aux pralines roses</b> — merengue escalfado flotando en crema inglesa, cubierto de pralines rosas machacadas. La de la Brasserie Georges, que es la de la foto, es la más conocida.</p></div>
+    <div class="probar-item"><img src="img/platos/genix.jpg" alt="Brioche de Saint-Genix cortada, con pralines rosas dentro" loading="lazy" width="800" height="600"><p><b>Brioche de Saint-Genix</b> — un brioche redondo relleno y cubierto de pralines rosas, de un pueblo de Saboya a una hora de aquí. Se compra en cualquier panadería y aguanta el viaje de vuelta.</p></div>
     <div class="probar-item"><img src="img/platos/bugnes.jpg" alt="Bugnes, tiras de masa frita con azúcar glas" loading="lazy" width="800" height="600"><p><b>Bugnes</b> — tiras de masa frita con azúcar, primas de nuestros pestiños. Son de Carnaval, pero algunas pastelerías las hacen todo el año.</p></div>
+    <div class="probar-item"><img src="img/platos/coussin.jpg" alt="Coussins de Lyon, bombones verdes con forma de cojín" loading="lazy" width="800" height="600"><p><b>Coussin de Lyon</b> — un bombón de mazapán verde relleno de ganache de chocolate al curaçao, con forma de cojín. Recuerda el cojín de seda que la ciudad ofreció a la Virgen en 1643 para que parase la peste. Lo hace Voisin, y es <b>el regalo que se trae de Lyon</b>.</p></div>
+  </div>
+  <h4 class="probar-grupo">Para beber, y una costumbre</h4>
+  <div class="probar">
     <div class="probar-item"><img src="img/platos/pot.jpg" alt="Un pot lyonnais de vino tinto junto a una copa" loading="lazy" width="800" height="600"><p><b>El pot lyonnais</b> — la botella gruesa de 46 cl con el culo pesado en la que se sirve el vino de la casa. Se pide <b>un pot</b> de Beaujolais o de Côtes du Rhône y se comparte: es lo que se bebe aquí, y cuesta unos seis euros.</p></div>
-    <div class="probar-item sin-foto"><p><b>El mâchon</b> — el desayuno de los canuts: embutido, un plato caliente y vino tinto <b>a las nueve de la mañana</b>. Quedan pocos sitios que lo sirvan, casi todos los sábados y cerca de los mercados. Si os cruzáis con uno, ya tenéis anécdota.</p></div>
+    <div class="probar-item"><img src="img/platos/machon.jpg" alt="Placa de la cofradía de los Francs-Mâchons, fundada en 1964 en un bouchon" loading="lazy" width="800" height="600"><p><b>El mâchon</b> — el desayuno de los canuts: embutido, un plato caliente y vino tinto <b>a las nueve de la mañana</b>. Quedan pocos sitios que lo sirvan, casi todos los sábados y cerca de los mercados. Hasta tiene cofradía, la de los Francs-Mâchons, fundada en 1964 en un bouchon: la placa de la foto. Si os cruzáis con uno, ya tenéis anécdota.</p></div>
   </div>
 
   <h3 class="ir-titulo" style="margin-top:34px">Y ahora el dato que os cambia el viaje: quién abre el fin de semana</h3>
@@ -2179,6 +2222,29 @@ Please credit : Xavier </li>
     <li><a href="https://commons.wikimedia.org/wiki/File%3ATarte_%C3%A0_la_praline_de_Lyon_-_1111.jpg" target="_blank" rel="noopener">Tarte à la praline de Lyon - 1111.jpg</a> · CC BY-SA 4.0 · Amada44</li>
     <li><a href="https://commons.wikimedia.org/wiki/File%3ABugnes_in_Dauphin%C3%A9_region_France.jpg" target="_blank" rel="noopener">Bugnes in Dauphiné region France.jpg</a> · CC BY-SA 4.0 · Jmvernay</li>
     <li><a href="https://commons.wikimedia.org/wiki/File%3APot_lyonnais_et_verre_de_rouge_au_Pailleron_%28Lyon%29_en_ao%C3%BBt_2023.JPG" target="_blank" rel="noopener">Pot lyonnais et verre de rouge au Pailleron (Lyon) en août 2023.JPG</a> · CC0 · Benoît Prieur</li>
+    <li><a href="https://commons.wikimedia.org/wiki/File%3ALyon_5e_-_Rue_Tramassac_-_Daniel_%26_Denise_-_P%C3%A2t%C3%A9_en_cro%C3%BBte_au_foie_gras_de_canard_et_ris_de_veau.jpg" target="_blank" rel="noopener">Lyon 5e - Rue Tramassac - Daniel & Denise - Pâté en croûte au foie gras de canard et ris de veau.jpg</a> · CC0 · Romainbehar</li>
+    <li><a href="https://commons.wikimedia.org/wiki/File%3ABrasserie_Georges_%28Lyon%29_-_T%C3%AAte_de_veau_sauce_ravigote_%28mars_2023%29.jpg" target="_blank" rel="noopener">Brasserie Georges (Lyon) - Tête de veau sauce ravigote (mars 2023).jpg</a> · CC BY-SA 4.0 · Sebleouf</li>
+    <li><a href="https://commons.wikimedia.org/wiki/File%3ALyon_4e_-_Rue_Dumenge_-_Brasserie_Le_Commerce_-_%C5%92ufs_meurette.jpg" target="_blank" rel="noopener">Lyon 4e - Rue Dumenge - Brasserie Le Commerce - Œufs meurette.jpg</a> · CC0 · Romainbehar</li>
+    <li><a href="https://commons.wikimedia.org/wiki/File%3ASaucisson_chaud_truff%C3%A9_aux_pistaches_et_pommes_de_terre_saut%C3%A9es_%28d%C3%A9cembre_2020%29_-_2.jpg" target="_blank" rel="noopener">Saucisson chaud truffé aux pistaches et pommes de terre sautées (décembre 2020) - 2.jpg</a> · CC0 · Benoît Prieur</li>
+    <li><a href="https://commons.wikimedia.org/wiki/File%3ALyon_5e_-_Rue_Tramassac_-_Daniel_%26_Denise_-_Sabodet.jpg" target="_blank" rel="noopener">Lyon 5e - Rue Tramassac - Daniel & Denise - Sabodet.jpg</a> · CC0 · Romainbehar</li>
+    <li><a href="https://commons.wikimedia.org/wiki/File%3ARosettes_de_Lyon.jpg" target="_blank" rel="noopener">Rosettes de Lyon.jpg</a> · CC BY 2.0 · INRA DIST</li>
+    <li><a href="https://commons.wikimedia.org/wiki/File%3AJ%C3%A9sus_de_Lyon_%283%29.jpg" target="_blank" rel="noopener">Jésus de Lyon (3).jpg</a> · CC BY-SA 4.0 · Ji-Elle</li>
+    <li><a href="https://commons.wikimedia.org/wiki/File%3AGrattons_lyonnais.jpg" target="_blank" rel="noopener">Grattons lyonnais.jpg</a> · CC BY-SA 3.0 · Julienbzh35</li>
+    <li><a href="https://commons.wikimedia.org/wiki/File%3ALyon-G%C3%A2teau_de_foies_de_volaille.jpg" target="_blank" rel="noopener">Lyon-Gâteau de foies de volaille.jpg</a> · CC BY-SA 4.0 · Ji-Elle</li>
+    <li><a href="https://commons.wikimedia.org/wiki/File%3AOs_%C3%A0_moelle.jpg" target="_blank" rel="noopener">Os à moelle.jpg</a> · CC BY-SA 4.0 · Arnaud 25</li>
+    <li><a href="https://commons.wikimedia.org/wiki/File%3APoularde_de_Bresse_aux_morilles_001.JPG" target="_blank" rel="noopener">Poularde de Bresse aux morilles 001.JPG</a> · CC BY-SA 4.0 · Arnaud 25</li>
+    <li><a href="https://commons.wikimedia.org/wiki/File%3AFran%C3%A7oise_Fayolle_pr%C3%A9parant_ses_poulardes_demi-deuil_dans_son_restaurant_du_73_rue_Duquesne_%28Lyon%29_%C3%A0_la_fin_du_XIXe.jpg" target="_blank" rel="noopener">Françoise Fayolle préparant ses poulardes demi-deuil dans son restaurant du 73 rue Duquesne (Lyon) à la fin du XIXe.jpg</a> · Public domain · Unknown authorUnknown author</li>
+    <li><a href="https://commons.wikimedia.org/wiki/File%3APoulet_jaune_au_vinaigre_d%27Orl%C3%A9ans.jpg" target="_blank" rel="noopener">Poulet jaune au vinaigre d'Orléans.jpg</a> · CC BY-SA 4.0 · Arnaud 25</li>
+    <li><a href="https://commons.wikimedia.org/wiki/File%3ALyon_1er_-_Rue_du_Major_Martin_-_Restaurant_Chez_Paul_-_Boudin_aux_pommes.jpg" target="_blank" rel="noopener">Lyon 1er - Rue du Major Martin - Restaurant Chez Paul - Boudin aux pommes.jpg</a> · CC0 · Romainbehar</li>
+    <li><a href="https://commons.wikimedia.org/wiki/File%3APotatoes_lyonnaise.JPG" target="_blank" rel="noopener">Potatoes lyonnaise.JPG</a> · CC BY-SA 3.0 · Glane23</li>
+    <li><a href="https://commons.wikimedia.org/wiki/File%3ASalade_de_lentilles_au_Bouillon_de_Lyon_en_f%C3%A9vrier_2023.jpg" target="_blank" rel="noopener">Salade de lentilles au Bouillon de Lyon en février 2023.jpg</a> · CC0 · Benoît Prieur</li>
+    <li><a href="https://commons.wikimedia.org/wiki/File%3ABrasserie_l%27Ouest_Paul_Bocuse_08.jpg" target="_blank" rel="noopener">Brasserie l'Ouest Paul Bocuse 08.jpg</a> · CC BY-SA 4.0 · Arnaud 25</li>
+    <li><a href="https://commons.wikimedia.org/wiki/File%3ABrasserie_Georges_%28Lyon%29_-_%C3%8Ele_flottante_aux_pralines_roses_%28oct_2022%29.jpg" target="_blank" rel="noopener">Brasserie Georges (Lyon) - Île flottante aux pralines roses (oct 2022).jpg</a> · CC BY-SA 4.0 · Sebleouf</li>
+    <li><a href="https://commons.wikimedia.org/wiki/File%3ABrioche_Saint_Genix.jpg" target="_blank" rel="noopener">Brioche Saint Genix.jpg</a> · Public domain · ²°¹°° at French Wikipedia</li>
+    <li><a href="https://commons.wikimedia.org/wiki/File%3ACoussins_de_Lyon.jpg" target="_blank" rel="noopener">Coussins de Lyon.jpg</a> · CC BY-SA 4.0 · Ji-Elle</li>
+    <li><a href="https://commons.wikimedia.org/wiki/File%3ARigottes_de_Condrieu.JPG" target="_blank" rel="noopener">Rigottes de Condrieu.JPG</a> · CC0 · Benoît Prieur</li>
+    <li><a href="https://commons.wikimedia.org/wiki/File%3AFaisselle_%26_confiture_de_lait.jpg" target="_blank" rel="noopener">Faisselle & confiture de lait.jpg</a> · CC BY-SA 3.0 · Véronique PAGNIER</li>
+    <li><a href="https://commons.wikimedia.org/wiki/File%3AFrancs-M%C3%A2chons_-_plaque_1.JPG" target="_blank" rel="noopener">Francs-Mâchons - plaque 1.JPG</a> · CC0 · Benoît Prieur</li>
     </ul>
     <p>Todas de Wikimedia Commons, con licencia Creative Commons. El mapa es de
     <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>, con licencia ODbL.</p>
