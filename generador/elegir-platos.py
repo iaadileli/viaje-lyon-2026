@@ -48,7 +48,7 @@ PLATOS = {
  'coussin':      ('2:coussin', 3),
  'rigotte':      ('2:rigotte', 2),     # abierta
  'faisselle':    ('2:faisselle', 0),
- 'machon':       ('2:machon', 0),      # la placa de los Francs-Mâchons
+ 'machon':       ('2:lyonfood', 29),   # tabla de embutido del Café du Gros Caillou (Croix-Rousse); la placa de los Francs-Mâchons no gustó
 }
 cand = json.load(open('generador/datos-fuente/fotos-platos.json'))
 cand.update({'2:' + k: v for k, v in json.load(open('generador/datos-fuente/fotos-platos2.json')).items()})
